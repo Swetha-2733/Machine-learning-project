@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+  
+    <CENTER>
+    <h1>FIRE ALRAM PREDICTOR</h1>
+  
+    <form method="POST">
+      {% csrf_token %}  
+      <style>
+        h1 {
+          
+          font-size: 30px;
+          color:black;
+        }
+      </style>
+      <body bgcolor="orange">
+        
+          <table>
+            
+       <tr>
+        <td><br>UTC</td>
+       <td>
+       <input type="text" name="textutc">
+       </td>
+      </tr>
+      <tr>
+      <td><br>Temperature[C]</td>
+      <td>
+      <input type="text" name="texttemperature">
+      </td>
+      </tr>
+      <tr>
+      <td><br>Humidity[%]</td>
+      <td>
+      <input type="text" name="texthumidity">
+     </td>
+     </tr>
+      <tr>
+      <td><br>TVOC[PPD]</td>
+      <td>
+       <input type="text" name="textTVOC">
+       </td>
+       </tr>
+       <tr>
+       <td><br>eCO2[PPM]</td>
+        <td>
+        <input type="text" name="texteCO2">
+       </td>
+        </tr>
+       <tr>
+       <td><br>RAW_H2</td>
+      <td>
+     <input type="text" name="textRawH2">
+     </td>
+     </tr>
+      <tr>
+     <td><br>Raw_Ethanol</td>
+     <td>
+     <input type="text" name="textRawEthanol">
+     </td>
+     </tr>
+      <tr>
+     <td><br>Pressure</td>
+     <td>
+     <input type="text" name="textpressure">
+     </td>
+      </tr>
+      <tr>
+      <td><br>PM1</td>
+      <td>
+     <input type="text" name="textPM1">
+      </td>
+      </tr>
+      <tr>
+     <td><br>PM2</td>
+      <td>
+      <input type="text" name="textPM2">
+        </td>
+        </tr>
+       <tr>
+      <td><br>NC0</td>
+     <td>
+      <input type="text" name="textNC0">
+     </td>
+      </tr>
+     <tr>
+      <td><br>NC1</td>
+   <td>
+    <input type="text" name="textNC1">
+                                        </td>
+    </tr>
+     <tr>
+    <td><br>NC2</td>
+     <td>
+    <input type="text" name="textNC2">
+    </td>
+    </tr>
+    <tr>
+    <td><br>CNT</td>
+    <td>
+    <input type="text" name="textCNT">
+    </td>
+    </tr>
+   <tr>
+   <td><br>
+    <button type="submit" name="buttonpredict">SUBMIT & PREDICT</button>
+   </td>
+   </tr>
+   <tr>
+    <td><h1>{{res}}</h1></td>
+                                                
+     </tr>
+                
+        </center>
+      </table>
+        </form>
+      </body>
+    
+</html>
