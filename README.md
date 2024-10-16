@@ -1,6 +1,4 @@
-Here's a template README for a **Fire Alarm Predictor** project that uses the Random Forest algorithm. You can adjust it with details specific to your project.
 
----
 
 # Fire Alarm Predictor
 
